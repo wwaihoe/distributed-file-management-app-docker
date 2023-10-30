@@ -17,8 +17,7 @@ var minioClient = new Minio.Client({
   port: 9000,
   useSSL: false,
   accessKey: "minioadmin",
-  secretKey: "secretpass",
-  withProxy: "minioserver:9000"
+  secretKey: "secretpass"
 });
 
 const bucketName = "myfiles";
@@ -59,12 +58,14 @@ app.post("/download", (req, res) => {
   console.log("Download: " + req.body);
   minioClient.presignedGetObject(bucketName, req.body, 5 * 60 * 60, function (err, presignedUrl) {
     if (err) return console.log(err)
+    console.log("DL URL: " + presignedUrl);
     res.status(200);
     res.send(presignedUrl);
   })
 });
 
-process.on("exit", () => {
+//remove bucket when server shuts down
+process.on("SIGINT", () => {
   try {
     minioClient.removeBucket(bucketName);
     console.log("Bucket removed successfully.");
