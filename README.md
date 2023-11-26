@@ -1,5 +1,5 @@
 # distributed-file-management-system
-# 3-Tiered Web App
+## 3-Tiered Web App
 ## Demo
 https://github.com/wwaihoe/distributed-file-management-system/assets/91514179/bd5619e5-58ba-41fb-8e09-a8beb530e034
 
