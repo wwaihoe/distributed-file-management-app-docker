@@ -4,12 +4,6 @@
 https://github.com/wwaihoe/distributed-file-management-system/assets/91514179/bd5619e5-58ba-41fb-8e09-a8beb530e034
 
 Home page:
-![image](https://github.com/wwaihoe/distributed-file-management-system/assets/91514179/4b37be05-be4b-48e9-9ad7-021c7c91075d)
-
-Select file to upload:
-![image](https://github.com/wwaihoe/distributed-file-management-system/assets/91514179/c7c4d9da-24da-4735-9d2a-de419494c4f4)
-
-See uploaded file (able to download or delete with the buttons on the right):
 ![image](https://github.com/wwaihoe/distributed-file-management-system/assets/91514179/07dc728f-b7a6-44dc-8f24-77a629f174e1)
  
 Files are uploaded to MinIO object store:
